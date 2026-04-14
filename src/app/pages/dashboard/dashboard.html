@@ -1,0 +1,38 @@
+<div class="page">
+  <header class="page-header">
+    <h1>Good {{ timeOfDay() }}</h1>
+    <p class="subtitle">Here’s your sleep at a glance.</p>
+  </header>
+
+  @if (latest(); as analysis) {
+    <section class="card highlight">
+      <h2>Last night</h2>
+      <p class="date">{{ analysis.entry.date }}</p>
+      <p class="duration">
+        <strong>{{ formatDuration(analysis.entry.durationMinutes) }}</strong> total sleep
+      </p>
+      <p class="cycles">{{ analysis.cycleCount }} sleep cycle{{ analysis.cycleCount !== 1 ? 's' : '' }} (~90 min each)</p>
+      <a routerLink="/analysis" class="link">View full analysis →</a>
+    </section>
+  } @else {
+    <section class="card empty">
+      <p>No sleep logged yet.</p>
+      <a routerLink="/track" class="button">Log your first sleep</a>
+    </section>
+  }
+
+  @if (recentAverageMinutes() !== null && recommendation(); as rec) {
+    <section class="card recommendation" [class.more]="rec === 'more'" [class.less]="rec === 'less'" [class.good]="rec === 'good'">
+      <h2>Sleep recommendation</h2>
+      <p>{{ recMessage() }}</p>
+      @if (recentAverageMinutes(); as avg) {
+        <p class="muted">Recent average: {{ formatDuration(avg) }}</p>
+      }
+    </section>
+  }
+
+  <div class="actions">
+    <a routerLink="/track" class="button primary">Log sleep</a>
+    <a routerLink="/dreams" class="button secondary">Dream journal</a>
+  </div>
+</div>

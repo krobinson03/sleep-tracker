@@ -1,0 +1,129 @@
+.page {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.page-header {
+  margin-bottom: 1.5rem;
+
+  h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.75rem;
+    color: var(--text);
+  }
+
+  .subtitle {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+}
+
+.card {
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .duration {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+  }
+
+  .cycles {
+    margin: 0 0 0.75rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  .link {
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.empty {
+    text-align: center;
+    padding: 2rem;
+
+    p {
+      margin: 0 0 1rem 0;
+      color: var(--text-muted);
+    }
+  }
+
+  &.recommendation {
+    &.more {
+      border-left: 4px solid var(--warning);
+    }
+    &.less {
+      border-left: 4px solid var(--info);
+    }
+    &.good {
+      border-left: 4px solid var(--success);
+    }
+
+    .muted {
+      margin: 0.5rem 0 0 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s;
+
+  &.primary {
+    background: var(--primary);
+    color: var(--primary-contrast);
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  &.secondary {
+    background: var(--surface-hover);
+    color: var(--text);
+
+    &:hover {
+      background: var(--border);
+    }
+  }
+}

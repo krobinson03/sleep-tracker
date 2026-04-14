@@ -1,0 +1,49 @@
+<div class="page">
+  <header class="page-header">
+    <h1>Dream journal</h1>
+    <p class="subtitle">Write down what you dreamt about. We’ll keep your entries so you can look back.</p>
+  </header>
+
+  <section class="today-card card">
+    <h2>Today’s dreams</h2>
+    <p class="prompt">What did you dream about last night?</p>
+    <textarea
+      [ngModel]="todayContent()"
+      (ngModelChange)="todayContent.set($event)"
+      placeholder="Describe your dreams here…"
+      rows="4"
+      class="dream-input"
+    ></textarea>
+    <button type="button" class="button primary" (click)="saveToday()">Save today’s entry</button>
+  </section>
+
+  <section class="history">
+    <h2>Previous entries</h2>
+    @if (history().length === 0) {
+      <p class="empty">No past entries yet. Save your first dream above.</p>
+    } @else {
+      <ul class="entry-list">
+        @for (entry of history(); track entry.id) {
+          <li class="entry-item">
+            <button
+              type="button"
+              class="entry-header"
+              (click)="toggleExpand(entry.id)"
+              [attr.aria-expanded]="isExpanded(entry.id)"
+            >
+              <span class="entry-date">{{ formatDate(entry.date) }}</span>
+              <span class="entry-preview">{{ entry.content.slice(0, 60) }}{{ entry.content.length > 60 ? '…' : '' }}</span>
+              <span class="expand-icon">{{ isExpanded(entry.id) ? '−' : '+' }}</span>
+            </button>
+            @if (isExpanded(entry.id)) {
+              <div class="entry-body">
+                <p class="entry-content">{{ entry.content }}</p>
+                <button type="button" class="delete" (click)="deleteDream(entry.id)">Delete entry</button>
+              </div>
+            }
+          </li>
+        }
+      </ul>
+    }
+  </section>
+</div>

@@ -1,0 +1,48 @@
+/* Sleep Tracker global theme */
+:root {
+  --bg: #0f1419;
+  --surface: #1a2129;
+  --surface-hover: #232d38;
+  --border: #2d3a47;
+  --text: #e6edf3;
+  --text-muted: #8b9cad;
+  --primary: #6b9bd1;
+  --primary-contrast: #0f1419;
+  --primary-subtle: rgba(107, 155, 209, 0.15);
+  --success: #56d364;
+  --warning: #d29922;
+  --info: #58a6ff;
+  --error: #f85149;
+  --error-bg: rgba(248, 81, 73, 0.12);
+  --radius: 10px;
+
+  /* Sleep stage c olors for analysis bars */
+  --stage-n1: #7ee787;
+  --stage-n2: #79c0ff;
+  --stage-n3: #a371f7;
+  --stage-rem: #ffa657;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", -apple-system, BlinkSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}

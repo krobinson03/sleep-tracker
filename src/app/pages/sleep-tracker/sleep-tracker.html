@@ -1,0 +1,40 @@
+<div class="page">
+  <header class="page-header">
+    <h1>Log sleep</h1>
+    <p class="subtitle">Record when you went to bed and when you woke up.</p>
+  </header>
+
+  <form class="form" (ngSubmit)="onSubmit()">
+    @if (error(); as err) {
+      <p class="error">{{ err }}</p>
+    }
+
+    <div class="field-group">
+      <label>Bed date</label>
+      <input type="date" [ngModel]="bedDate()" (ngModelChange)="bedDate.set($event)" name="bedDate" />
+    </div>
+    <div class="field-group">
+      <label>Bed time</label>
+      <input type="time" [ngModel]="bedTime()" (ngModelChange)="bedTime.set($event)" name="bedTime" />
+    </div>
+    <div class="field-group">
+      <label>Wake date</label>
+      <input type="date" [ngModel]="wakeDate()" (ngModelChange)="wakeDate.set($event)" name="wakeDate" />
+    </div>
+    <div class="field-group">
+      <label>Wake time</label>
+      <input type="time" [ngModel]="wakeTime()" (ngModelChange)="wakeTime.set($event)" name="wakeTime" />
+    </div>
+    <div class="field-group">
+      <label>Notes (optional)</label>
+      <textarea
+        [ngModel]="notes()"
+        (ngModelChange)="notes.set($event)"
+        name="notes"
+        rows="2"
+        placeholder="How did you feel?"
+      ></textarea>
+    </div>
+    <button type="submit" class="button primary">Save sleep</button>
+  </form>
+</div>
