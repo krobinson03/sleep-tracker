@@ -1,0 +1,151 @@
+{
+  "name": "mfe1",
+  "shared": [
+    {
+      "packageName": "@angular/common",
+      "outFileName": "_angular_common.fIqbKhxajn.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "@angular/common/http",
+      "outFileName": "_angular_common_http.80NfbvPoUP.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "@angular/core",
+      "outFileName": "_angular_core.AwTatBCIvf.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "@angular/core/primitives/di",
+      "outFileName": "_angular_core_primitives_di.AePwjZPalz.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "@angular/core/primitives/signals",
+      "outFileName": "_angular_core_primitives_signals.U8CzC2JfQZ.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "@angular/forms",
+      "outFileName": "_angular_forms.CcbqX2AqHG.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "@angular/platform-browser",
+      "outFileName": "_angular_platform_browser.oghNNJYVv6.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "@angular/router",
+      "outFileName": "_angular_router.3JCP1nsR4s.js",
+      "requiredVersion": "21.2.8",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.8"
+    },
+    {
+      "packageName": "rxjs",
+      "outFileName": "rxjs.fsrQrZFIeE.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.2"
+    },
+    {
+      "packageName": "rxjs/operators",
+      "outFileName": "rxjs_operators.-eV3wCInsw.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.2"
+    },
+    {
+      "packageName": "tslib",
+      "outFileName": "tslib.T5Doof77u4.js",
+      "requiredVersion": "^2.3.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "2.8.1"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-KNUKVBCT",
+      "outFileName": "chunk-KNUKVBCT.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-DOT4ATRE",
+      "outFileName": "chunk-DOT4ATRE.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-P2OSO4XP",
+      "outFileName": "chunk-P2OSO4XP.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-RFPVFFLR",
+      "outFileName": "chunk-RFPVFFLR.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-4CLCTAJ7",
+      "outFileName": "chunk-4CLCTAJ7.js"
+    }
+  ],
+  "exposes": [
+    {
+      "key": "./Component",
+      "outFileName": "Component-4BECESKI.js"
+    },
+    {
+      "key": "./Track",
+      "outFileName": "Track-FMTWN3G7.js"
+    },
+    {
+      "key": "./Analysis",
+      "outFileName": "Analysis-LDYO6QD4.js"
+    },
+    {
+      "key": "./Dreams",
+      "outFileName": "Dreams-WHPXS2N7.js"
+    }
+  ]
+}
