@@ -1,0 +1,155 @@
+{
+  "name": "mfe1",
+  "shared": [
+    {
+      "packageName": "@angular/common",
+      "outFileName": "_angular_common.XYplNIm2tJ.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "@angular/common/http",
+      "outFileName": "_angular_common_http.-kRFBv4DfG.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "@angular/core",
+      "outFileName": "_angular_core.DWz25yserO.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "@angular/core/primitives/di",
+      "outFileName": "_angular_core_primitives_di.6PnM2KYEHw.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "@angular/core/primitives/signals",
+      "outFileName": "_angular_core_primitives_signals.AB4wHcjEqD.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "@angular/forms",
+      "outFileName": "_angular_forms.MG6Asknreb.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "@angular/platform-browser",
+      "outFileName": "_angular_platform_browser.A7uoTljQZG.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "@angular/router",
+      "outFileName": "_angular_router.ubueZiriuX.js",
+      "requiredVersion": "21.2.12",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "21.2.12"
+    },
+    {
+      "packageName": "rxjs",
+      "outFileName": "rxjs.m5E0NQRH7S.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.2"
+    },
+    {
+      "packageName": "rxjs/operators",
+      "outFileName": "rxjs_operators.Q6aeM0dLxT.js",
+      "requiredVersion": "~7.8.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "7.8.2"
+    },
+    {
+      "packageName": "tslib",
+      "outFileName": "tslib.UpVcuUdM5D.js",
+      "requiredVersion": "^2.3.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "2.8.1"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-KNUKVBCT",
+      "outFileName": "chunk-KNUKVBCT.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-XLQPIWP7",
+      "outFileName": "chunk-XLQPIWP7.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-IGYUEDIQ",
+      "outFileName": "chunk-IGYUEDIQ.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-4RZLOFAI",
+      "outFileName": "chunk-4RZLOFAI.js"
+    },
+    {
+      "singleton": false,
+      "strictVersion": false,
+      "version": "0.0.0",
+      "requiredVersion": "0.0.0",
+      "packageName": "@nf-internal/chunk-4CLCTAJ7",
+      "outFileName": "chunk-4CLCTAJ7.js"
+    }
+  ],
+  "exposes": [
+    {
+      "key": "./Component",
+      "outFileName": "Component-TDRX4PLU.js"
+    },
+    {
+      "key": "./Track",
+      "outFileName": "Track-GZCS55SU.js"
+    },
+    {
+      "key": "./Analysis",
+      "outFileName": "Analysis-OCVDKKXY.js"
+    },
+    {
+      "key": "./Dreams",
+      "outFileName": "Dreams-OFKEAEPY.js"
+    },
+    {
+      "key": "./Card",
+      "outFileName": "Card-MOWUHXHB.js"
+    }
+  ]
+}
